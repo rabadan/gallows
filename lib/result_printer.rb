@@ -22,7 +22,7 @@ class ResultPrinter
     while counter <= 7
       # Соберем путь к файлу с изображением виселицы. Каждыый из них лежит в
       # папке /image/ и называется 0.txt, 1.txt, 2.txt и т. д.
-      file_name = current_path + "/image/#{counter}.txt"
+      file_name = current_path + "/../image/#{counter}.txt"
 
       # if File.exist?(file_name)
       #   # Ести такой файл существует, считываем его содержимое целиком и кладем
