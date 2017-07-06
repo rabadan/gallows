@@ -8,7 +8,7 @@ class WordReader
   # Сохраним старую возможность читать слово из аргументов командной строки. В
   # качестве отедльного метода read_from_args для обратной совместимости.
   def read_from_args
-    return ARGV[0]
+    ARGV[0].chomp
   end
 
   # Метод read_from_file, возвращающий случайное слово, прочитанное из файла,
@@ -31,6 +31,6 @@ class WordReader
 
     # Возвращаем случайную строчку (слово) из прочитанного массива, не забывая
     # удалить в конце символ перевода строки методом chomp.
-    return lines.sample.chomp
+    lines.sample.chomp
   end
 end

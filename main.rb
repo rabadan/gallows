@@ -38,7 +38,14 @@ game = Game.new(word)
 
 while game.status == 0
   printer.print_status(game)
-  game.ask_next_letter
+  letter = ""
+  while letter == "" || letter.length > 1
+    puts "\nВведите следующую букву"
+    letter = STDIN.gets.encode("UTF-8").chomp
+  end
+
+  # После получения ввода, передаем управление в основной метод игры
+  game.next_step(letter)
 end
 
 printer.print_status(game)
