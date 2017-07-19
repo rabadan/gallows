@@ -29,7 +29,7 @@ class Game
 
   def get_letters(word)
     if word.nil? || word == ''
-      abort 'Задано пустое слово, не о чем играть. Закрываемся.'
+      raise 'Задано пустое слово, не о чем играть. Закрываемся.'
     else
       word = word.encode('UTF-8')
     end
