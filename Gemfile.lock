@@ -1,0 +1,12 @@
+GEM
+  specs:
+    unicode (0.4.4.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  unicode
+
+BUNDLED WITH
+   1.15.1
