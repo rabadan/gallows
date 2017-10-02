@@ -37,7 +37,7 @@ class ResultPrinter
     puts game.version
     puts
     puts "Слово: #{get_word_for_print(game.letters, game.good_letters)}"
-    puts "Ошибки: #{game.bad_letters.join(", ")}"
+    puts "Ошибки: #{game.bad_letters.join(', ')}"
 
     print_viselitsa(game.errors)
 
@@ -53,7 +53,7 @@ class ResultPrinter
   end
 
   def get_word_for_print(letters, good_letters)
-    result = ""
+    result = ''
 
     letters.each do |letter|
       result += if good_letters.include?(letter)
@@ -67,6 +67,6 @@ class ResultPrinter
   end
 
   def cls
-    system("clear") || system("cls")
+    system('clear') || system('cls')
   end
 end

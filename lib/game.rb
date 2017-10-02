@@ -68,6 +68,8 @@ class Game
       when 'Й' then letters << 'И'
       when 'Е' then letters << 'Ё'
       when 'Ё' then letters << 'Е'
+      else
+        # type code here
     end
   end
 

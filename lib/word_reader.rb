@@ -20,7 +20,7 @@ class WordReader
     # Открываем файл, явно указывая его кодировку, читаем все строки в массив и
     # закрываем файл.
     begin
-      file = File.new(file_name, "r:UTF-8")
+      file = File.new(file_name, 'r:UTF-8')
       line = file.readlines.sample.chomp
       file.close
     rescue SystemCallError
